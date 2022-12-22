@@ -1,0 +1,111 @@
+python-anyjson (0.3.3-4) unstable; urgency=medium
+
+  * Rebuild source only.
+
+ -- Thomas Goirand <zigo@debian.org>  Fri, 12 Nov 2021 14:15:25 +0100
+
+python-anyjson (0.3.3-3) unstable; urgency=medium
+
+  [ Debian Janitor ]
+  * Bump debhelper from old 7 to 13.
+  * Set debhelper-compat version in Build-Depends.
+
+  [ Ondřej Nový ]
+  * d/control: Update Maintainer field with new Debian Python Team
+    contact address.
+  * d/control: Update Vcs-* fields with new Debian Python Team Salsa
+    layout.
+
+  [ Thomas Goirand ]
+  * Team upload.
+  * Add do-not-use-2to3.patch. (Closes: #997616)
+
+ -- Thomas Goirand <zigo@debian.org>  Thu, 11 Nov 2021 15:26:14 +0100
+
+python-anyjson (0.3.3-2) unstable; urgency=medium
+
+  [ Ondřej Nový ]
+  * Fixed homepage (https)
+  * Fixed VCS URL (https)
+  * d/control: Set Vcs-* to salsa.debian.org
+  * d/copyright: Use https protocol in Format field
+  * d/control: Remove ancient X-Python-Version field
+  * d/control: Remove ancient X-Python3-Version field
+  * Convert git repository from git-dpm to gbp layout
+
+  [ Piotr Ożarowski ]
+  * Add dh-python to Build-Depends
+
+  [ Sandro Tosi ]
+  * Drop python2 support; Closes: #937576
+  * Add python3-nose to b-d, needed by tests
+  * Simplify debian/rules
+  * debian/patches/py3k.patch
+    - run 2to3 by hand as `use_2to3=True` doesnt seem to work when running
+      setup.py, see https://github.com/pypa/setuptools/issues/1120
+
+ -- Sandro Tosi <morph@debian.org>  Fri, 13 Dec 2019 13:24:41 -0500
+
+python-anyjson (0.3.3-1) unstable; urgency=low
+
+  [ Jakub Wilk ]
+  * Use canonical URIs for Vcs-* fields.
+
+  [ Michael Fladischer ]
+  * New upstream release.
+  * Bump Standards version to 3.9.4.
+  * Bump debhelper Build-Depends to >= 8.1.0~.
+  * Update years in d/copyright.
+
+ -- Michael Fladischer <FladischerMichael@fladi.at>  Wed, 05 Jun 2013 14:40:51 +0200
+
+python-anyjson (0.3.1-2) unstable; urgency=low
+
+  * Change order of my name.
+  * Add anyjson.egg-info/PKG-INFO to d/clean to allow the package to be
+    built tice in a row (Closes: #671146).
+  * Update years in d/copyright.
+  * Use DEP5 1.0 format URL.
+  * Bump Standards version to 3.9.3.
+  * Remove d/s/local-options from SVN.
+
+ -- Michael Fladischer <FladischerMichael@fladi.at>  Fri, 01 Jun 2012 16:31:39 +0200
+
+python-anyjson (0.3.1-1) unstable; urgency=low
+
+  * New upstream version (Closes: #620959).
+    - Drop python-cjson from Depends.
+  * Set PMPT as maintainer and myself as uploader.
+  * Switch to dh_python2.
+  * Switch to source format 3.0 (quilt).
+  * Use DEP5 for copyright file.
+  * Clean up after build.
+  * Streamline packaging code with wrap-and-sort.
+  * Extend regex in d/watch.
+  * Bumped Standards-Version to 3.9.2 (no change necessary).
+  * Set X-P-V to >= 2.4.
+  * Recommend either python (>= 2.6) or python-simplejson.
+  * Build for python3.
+  * Clean build directory.
+
+ -- Fladischer Michael <FladischerMichael@fladi.at>  Wed, 06 Jul 2011 16:33:28 +0200
+
+python-anyjson (0.2.3-1) unstable; urgency=low
+
+  * New upstream release
+  * Added dependencies on python json modules (Closes: #570648, #569824)
+  * Updated Stanards version, no changes needed
+
+ -- David Watson <david@bashton.com>  Thu, 18 Mar 2010 21:38:27 +0000
+
+python-anyjson (0.2.2-2) unstable; urgency=low
+
+  * Improve the long description (Closes: #554467).
+
+ -- David Watson <david@bashton.com>  Fri, 06 Nov 2009 09:24:13 +0000
+
+python-anyjson (0.2.2-1) unstable; urgency=low
+
+  * Initial release (Closes: #551886)
+
+ -- David Watson <david@bashton.com>  Wed, 21 Oct 2009 14:25:29 +0100
